@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 set -eo pipefail; [[ $DOKKU_TRACE ]] && set -x
 
-sudo /usr/local/bin/monit reload > /dev/null
+service monit reload > /dev/null

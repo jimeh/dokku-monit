@@ -3,7 +3,7 @@ set -eo pipefail; [[ $DOKKU_TRACE ]] && set -x
 source "$(dirname $0)/../common/functions"
 
 restart_monit () {
-  sudo /usr/local/bin/monit reload > /dev/null
+  service monit reload > /dev/null
 }
 
 case "$1" in
